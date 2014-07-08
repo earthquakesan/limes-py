@@ -21,4 +21,4 @@ class LimesRunner(object):
 
 if __name__ == "__main__":
     limesRunner = LimesRunner()
-    limesRunner.runTest()
+    print limesRunner.runTest()

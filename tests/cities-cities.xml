@@ -32,14 +32,13 @@
     </PREFIX>
     <SOURCE>
         <ID>CERL</ID>
-	<ENDPOINT>/home/ivan/Soft/Installed/LIMES-test/cities.csv</ENDPOINT>
+        <ENDPOINT>/home/ivan/Soft/Installed/LIMES-test/cities.csv</ENDPOINT>
         <VAR>?x</VAR>
         <PAGESIZE>-1</PAGESIZE>
         <RESTRICTION></RESTRICTION>
         <PROPERTY>City</PROPERTY>
         <TYPE>csv</TYPE>
     </SOURCE>
-        
     <TARGET>
         <ID>CERL</ID>
         <ENDPOINT>/home/ivan/Soft/Installed/LIMES-test/cities.csv</ENDPOINT>
@@ -50,17 +49,14 @@
         <TYPE>csv</TYPE>
     </TARGET>
     <METRIC>levenshtein(x.City, y.City)</METRIC>
-        
     <ACCEPTANCE>
         <THRESHOLD>0.95</THRESHOLD>
         <FILE>foo.nt</FILE>
         <RELATION>owl:sameAs</RELATION>
     </ACCEPTANCE>
-        
     <REVIEW>
         <THRESHOLD>0.9</THRESHOLD>
         <FILE>foo2.nt</FILE>
         <RELATION>owl:sameAs</RELATION>
     </REVIEW>
-        </LIMES>
-
+</LIMES>
